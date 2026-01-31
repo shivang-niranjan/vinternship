@@ -173,7 +173,9 @@ export interface ICourseRepository {
     -   This interface is the “standard form” for the records office.
         
     -   Business logic only talks to this interface, never to storage details.
+
 ## **C. Implement an In-Memory Repository**
+
 ```typescript
 // repositories/InMemoryCourseRepository.ts
 import { ICourseRepository } from './interfaces/ICourseRepository';
@@ -220,6 +222,7 @@ export class InMemoryCourseRepository implements ICourseRepository {
 
 ## **D. Implement a Database Repository (Example Outline)**
 ```typescript
+
 // repositories/DatabaseCourseRepository.ts
 import { ICourseRepository } from './interfaces/ICourseRepository';
 import { Course } from '../models/Course';
@@ -244,7 +247,9 @@ export class DatabaseCourseRepository implements ICourseRepository {
  -   **Why?**
     
     -   You can now swap between in-memory and database storage without changing business logic.
+
 ## **E. Use the Repository in a Service**
+
 ```typescript
 // services/CourseService.ts
 import { ICourseRepository } from '../repositories/interfaces/ICourseRepository';
@@ -270,6 +275,7 @@ export class CourseService {
     -   The service only knows about the repository interface, not how data is stored.
 
 ## **F. Hook Up in Your App**
+
 ```typescript
 // app.ts
 import express from 'express';

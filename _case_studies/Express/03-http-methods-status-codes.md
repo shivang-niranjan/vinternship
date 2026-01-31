@@ -16,6 +16,7 @@ You manage a group of neighborhood food stores. Every day, staff and customers n
 - Remove items that are no longer sold.
 
 If requests get mixed up or answers are unclear, staff and customers get confused, orders are delayed, and the stores lose business.
+
 <img src="https://i.postimg.cc/hPC3vbJ5/https-ps.png" width="300px" />
 
 
@@ -159,6 +160,7 @@ REST (Representational State Transfer) is a set of conventions for organizing en
 -   Always send a clear status code and message.
     
 -   Never expose sensitive server errors to the client (use 500 for unexpected issues).
+
 ## G. Visual Recap: How a Request Flows
 
 <img src="
@@ -171,7 +173,9 @@ https://i.postimg.cc/htS3PZPx/https.png" width="400px" />
 -   Always check status codes and response bodies.
     
 -   Log requests and errors on the server for troubleshooting.
+
 ## Summary Table: HTTP Methods & Status Codes
+
 | Action              | Method | Route                 | Status Codes         | Use Case                                   |
 |---------------------|--------|-----------------------|----------------------|--------------------------------------------|
 | List all products   | GET    | /products             | 200                  | Show all products                         |

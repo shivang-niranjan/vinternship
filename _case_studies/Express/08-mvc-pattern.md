@@ -229,6 +229,7 @@ app.listen(port, () => {
     
 
 ## 7. Common Pitfalls & Best Practices
+
 | **Pitfall**                              | **Best Practice**                                       |
 |------------------------------------------|----------------------------------------------------------|
 |  Mixing data access in business logic   | Always use repositories for storage access            |

@@ -158,7 +158,7 @@ const applicationValidation = [
     .withMessage("A valid recommendation letter link is required"),
 ];
 
-  ```typescript
+  ```
 
 **Explanation:**
 
@@ -167,7 +167,7 @@ const applicationValidation = [
 -   If any rule fails, the application is rejected with a specific message.
     
 
-**C. Implementing the Route Handler**
+## **C. Implementing the Route Handler**
 
 
 Just like a staff member checking each application, our route handler reviews the checklist and gives instant feedback if anything is missing or wrong.
@@ -194,7 +194,7 @@ Just like a staff member checking each application, our route handler reviews th
 -   Only applications that pass every check are accepted for review.
     
 
-**D. How This Solves the University’s Problems**
+## **D. How This Solves the University’s Problems**
 
 -   **No more missing essays or grades:**  The system blocks incomplete applications.
     

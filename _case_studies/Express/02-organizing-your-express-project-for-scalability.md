@@ -76,7 +76,7 @@ A well-structured Express project is just like that:
 
 A typical, scalable Express project might look like:
 
-
+```text
 greenfield-center/
 ├── app.js                         # Main application entry point
 ├── package.json          # Project metadata and dependencies
@@ -98,7 +98,7 @@ greenfield-center/
 │   └── auth.js
 ├── .env                  # Environment variables (if used)
 └── README.md             # Project documentation
-
+```
 
 **Key ideas:**
 
@@ -294,6 +294,7 @@ app.use('/contact', contactRouter);
     
 
 ## 7. Common Pitfalls & Best Practices
+
 | Pitfall                        | Best Practice                                    |
 |---------------------------------|--------------------------------------------------|
 | Mixing all routes in one file   | Separate routes into their own files            |

@@ -6,7 +6,9 @@ order: 6
 summary: "Learn about Middleware in Express"
 ---
 
-## 1. Problem Statement : A Day at “CityCare General Hospital”**
+## 1. Problem Statement : 
+
+## **A Day at “CityCare General Hospital”**
 
 CityCare General Hospital prides itself on excellent patient care.  
 But as the hospital grew, so did the complexity of discharging patients:
@@ -151,7 +153,7 @@ function doctorSignoffCheck(req, res, next) {
   ```
 Ensures no patient leaves without a doctor’s approval._
 
-## **G. Custom Middleware: Pharmacy Review**
+ **G. Custom Middleware: Pharmacy Review**
   ```typescript
 function pharmacyReview(req, res, next) {
   if (!req.body.pharmacyChecked) {

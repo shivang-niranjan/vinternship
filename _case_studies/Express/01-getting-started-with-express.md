@@ -78,7 +78,7 @@ Think of Express as the digital receptionist at the community center:
 -   Express is a library that runs on Node.js to help you build web servers easily
     
 
-## 5. Installation of Prerequisities
+## 4. Installation of Prerequisities
 
 Let’s help Greenfield Community Center get online!
 
@@ -125,18 +125,15 @@ npm install express
 -   The  `package.json`  file is updated so anyone can install the same dependencies with  `npm install`  in the future.
 
  **Step 4: Create Your First Server**
-
 -   Create a file called  `app.js`  with the following code:
   ```typescript
 const express = require('express');
 const app = express();
 const port = 3000;
-
 // Route for the homepage
 app.get('/', (req, res) => {
   res.send('Welcome to Greenfield Community Center!');
 });
-
 // Start the server
 app.listen(port, () => {
   console.log(`Community Center server running at http://localhost:${port}`);
